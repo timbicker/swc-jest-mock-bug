@@ -1,9 +1,11 @@
 import {jest} from "@jest/globals"
 
-jest.mock("./app")
+jest.mock("./app", () => ({
+  app: jest.fn(() => "Bye")
+}))
 import {app} from "./app"
 
 
 test("Test", () => {
-  expect('_isMockFunction' in app && app._isMockFunction).toBe(true)
+  expect(app()).toBe("Bye")
 })
