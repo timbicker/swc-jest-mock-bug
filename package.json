@@ -4,9 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:babel": "jest --config jest.config.babel.js"
   },
   "devDependencies": {
+    "@babel/preset-env": "latest",
+    "babel-jest": "latest",
+    "babel-core": "latest",
     "@swc/core": "latest",
     "@swc/jest": "latest",
     "jest": "latest"
