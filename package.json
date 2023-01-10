@@ -1,0 +1,11 @@
+{
+  "name": "swc-jest-mock-bug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@swc/core": "latest",
+    "@swc/jest": "latest",
+    "jest": "latest"
+  }
+}
